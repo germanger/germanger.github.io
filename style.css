@@ -1,0 +1,15 @@
+body 
+{
+	padding-top: 60px;
+}
+
+h1
+{
+    font-size: 30px;
+}
+
+.drawing-img
+{
+    border: 1px solid black;
+    max-width: 100%;
+}
