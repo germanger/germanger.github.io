@@ -11,19 +11,38 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="all.js"></script>
+    
+    <script>
+        $(document).ready(function() {       
+            $(document).on("click", "#toggle-more-links", function(e) {
+                e.preventDefault();
+                $(".more-links").toggle();
+            });
+            
+            if (window.location.href.indexOf("software") > -1) {
+                $("#software-development").show();
+            }
+            
+            $("#show-software-development").click(function(e) {
+                e.preventDefault();
+                $("#software-development").toggle();
+            });
+        });
+    </script>
 </head>
 
 <body>
 
     <div class="container">
+        <h1 style="text-align: center" class="hidden-lg hidden-md">Germán Vicencio L.</h1>
+        
         <div class="row">
             <div class="col-md-3" style="text-align: center">
                 <img src="img/about-photo.jpg" alt="" style="max-width: 100%;" />
                 <p>(2010 Self portrait)</p>
             </div>
             <div class="col-md-9">
-			    <h1>Germán Vicencio L.</h1>
+			    <h1 class="hidden-sm hidden-xs">Germán Vicencio L.</h1>
                 <p>
                     <strong>Occupation:</strong>
                     <br/>
@@ -38,40 +57,47 @@
                     <strong>Software experience:</strong>
                     <br/>
                     I've worked with all of the following languages/frameworks (at least once): <a href="#" id="show-software-development">Toggle...</a><br/>
-                    
-                    <ul id="software-development" style="display: none">
-                        <li><strong>General:</strong> C, C++, C#, Java, Prolog</li>
-                        <li><strong>Serverside web:</strong> ASP 3, PHP, ASP.NET, ASP.NET MVC, Struts, Node.JS, Express, SignalR</li>
-                        <li><strong>Clientside web:</strong> HTML 5, Javascript, ajax, jQuery, Handlebars.js, Angular.JS</li>
-                        <li><strong>SQL:</strong> MS SQL Server, MySQL, Postgre, SQLite</li>
-                        <li><strong>NoSQL:</strong> MongoDB</li>
-                        <li><strong>ORMs:</strong> Entity Framework, Linq to sql, Mongoose.JS, Sequelize.JS, Bookshelf.JS</li>
-                        <li><strong>Mobile:</strong> Android, GCM, j2me, jQuery mobile</li>
-                        <li><strong>Cloud experience:</strong> Windows Azure, Amazon Web Services, Heroku</li>
-                        <li><strong>Version control:</strong> SVN, GIT</li>
-                        <li><strong>SMS</strong>: Kannel, SMSLib, and others</li>
-                        <li><strong>Workflow:</strong> npm, Gruntjs, bower</li> 
-                    </ul>
                 </p>
+                
+                <ul id="software-development" style="display: none">
+                    <li><strong>General:</strong> C, C++, C#, Java, Prolog</li>
+                    <li><strong>Serverside web:</strong> ASP 3, PHP, ASP.NET, ASP.NET MVC, Struts, Node.JS, Express, SignalR</li>
+                    <li><strong>Clientside web:</strong> HTML 5, Javascript, ajax, jQuery, Handlebars.js, Angular.JS</li>
+                    <li><strong>SQL:</strong> MS SQL Server, MySQL, Postgre, SQLite</li>
+                    <li><strong>NoSQL:</strong> MongoDB</li>
+                    <li><strong>ORMs:</strong> Entity Framework, Linq to sql, Mongoose.JS, Sequelize.JS, Bookshelf.JS</li>
+                    <li><strong>Mobile:</strong> Android, GCM, j2me, jQuery mobile</li>
+                    <li><strong>Cloud experience:</strong> Windows Azure, Amazon Web Services, Heroku</li>
+                    <li><strong>Version control:</strong> SVN, GIT</li>
+                    <li><strong>SMS</strong>: Kannel, SMSLib, and others</li>
+                    <li><strong>Workflow:</strong> npm, Gruntjs, bower</li> 
+                </ul>
                 
 				<p>
 					<strong>Other sites:</strong>
 					<br/>
 					Here's a link to my... 
-					<ul>
-                        <li><a href="https://play.google.com/store/apps/developer?id=Germ%C3%A1n+Vicencio+L">Google Play site</a>, with my published Android applications</li>
-						<li><a href="http://www.flickr.com/germanger">Flickr</a>, with most of my paintings and drawings</li>
-						<li><a href="http://www.youtube.com/user/Givicencio?feature=mhee">Youtube channel</a>, where I have some.. videos, as expected</li>
-						<li><a href="http://paintingprocess.wordpress.com">Painting blog</a>, where I post photos describing the process of painters I like</li>
-						<li><a href="http://www.imdb.com/user/ur19713402/ratings">IMDB ratings</a>, where I rate the movies I watch</li>
-                        <li><a href="http://profile.ultimate-guitar.com/givicencio/contributions/tabs/">Ultimate-Guitar contributions</a>, where I've uploaded some guitar tabs</li>
-						<li class="more-links" style="display: none"><a href="http://code.google.com/u/100884736556418859107/">Google code repositories</a></li>
-						<li class="more-links" style="display: none"><a href="https://www.assembla.com/profile/germanger?public=true">Assembla repositories</a></li>
-						<li class="more-links" style="display: none"><a href="https://github.com/germanger">Github repositories</a></li>
-						<li class="more-links" style="display: none"><a href="https://app.cloudforge.com/users/242947">Cloudforge repositories</a></li>
-						<li><a href="#" id="toggle-more-links">Toggle more links...</a></li>
-					</ul>
 				</p>
+                
+                <ul>
+                    <li><a href="https://play.google.com/store/apps/developer?id=Germ%C3%A1n+Vicencio+L">Google Play site</a>, with my published Android applications</li>
+                    <li><a href="http://www.flickr.com/germanger">Flickr</a>, with most of my paintings and drawings</li>
+                    <li><a href="http://www.youtube.com/user/Givicencio?feature=mhee">Youtube channel</a>, where I have some.. videos, as expected</li>
+                    <li><a href="http://paintingprocess.wordpress.com">Painting blog</a>, where I post photos describing the process of painters I like</li>
+                    <li><a href="http://www.imdb.com/user/ur19713402/ratings">IMDB ratings</a>, where I rate the movies I watch</li>
+                    <li><a href="http://profile.ultimate-guitar.com/givicencio/contributions/tabs/">Ultimate-Guitar contributions</a>, where I've uploaded some guitar tabs</li>
+                    <li><a href="https://github.com/germanger">GitHub</a>, with some of my open source projects</li>
+                    <li class="more-links" style="display: none"><a href="http://code.google.com/u/100884736556418859107/">Google code repositories</a> (deprecated, moved to GitHub)</li>
+                    <li class="more-links" style="display: none"><a href="https://www.assembla.com/profile/germanger?public=true">Assembla repositories</a> (all private)</li>
+                    <li class="more-links" style="display: none"><a href="https://app.cloudforge.com/users/242947">Cloudforge repositories</a> (all private)</li>
+                    <li><a href="#" id="toggle-more-links">Toggle more links...</a></li>
+                </ul>
+                
+                <!--<p>
+                    <strong>Projects:</strong>
+                    <br/>
+                    Check a selection of my projects <a href="projects.html">here</a>
+                </p>-->
 				
 				<p>
 					<strong>Contact: </strong>
