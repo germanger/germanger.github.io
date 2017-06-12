@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Germán Vicencio: Proyectos</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-98362520-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {       
+            
+        });
+    </script>
+
+    <style>
+        hr { 
+            border-top: 1px solid #696565;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .carousel-control {
+            background: none !important;
+        }
+        
+        .carousel-control > .glyphicon {
+            color: gray !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: #333333">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="padding: 50px; background-color: white">
+                <h1 style="text-align: center">Germán Vicencio: Proyectos</h1>
+                
+                <p style="text-align: center; margin-bottom: 70px">Listado de algunos proyectos.<br/><a href="index.html">Go back.</a></p>
+                
+                <h2>Utilitario CompuAgro (2017)</h2>
+                <p>
+                  Aplicación de escritorio que se conecta a la base de datos de CompuAgro (SQL Server) y permite:
+                </p>
+                
+                <ul>
+                    <li>Exportar recepciones a Excel</li>
+                    <li>Exportar embarques a Excel</li>
+                    <li>Exportar despachos comerciales a Excel</li>
+                    <li>Imprimir etiquetas con impresora Zebra</li>
+                </ul>
+              
+                <div id="compuagro-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="https://raw.githubusercontent.com/germanger/germanger.github.io/master/img/compuagro-tools-1.jpg" target="_blank">
+                                <img alt="" src="/img/compuagro-tools-1.jpg" style="margin: auto;" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://raw.githubusercontent.com/germanger/germanger.github.io/master/img/compuagro-tools-2.jpg" target="_blank">
+                                <img alt="" src="https://raw.githubusercontent.com/germanger/germanger.github.io/master/img/compuagro-tools-2.jpg" style="margin: auto;" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://raw.githubusercontent.com/germanger/germanger.github.io/master/img/compuagro-tools-3.jpg" target="_blank">
+                                <img alt="" src="https://raw.githubusercontent.com/germanger/germanger.github.io/master/img/compuagro-tools-3.jpg" style="margin: auto;" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://raw.githubusercontent.com/germanger/germanger.github.io/master/img/compuagro-tools-4.jpg" target="_blank">
+                                <img alt="" src="https://raw.githubusercontent.com/germanger/germanger.github.io/master/img/compuagro-tools-4.jpg" style="margin: auto;" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#compuagro-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#compuagro-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Previsualizar e imprimir ZPL (2017)</h2>
+                <p>
+                  Aplicación de escritorio que permite previsualizar ZPL e imprimir con una impresora Zebra. Hecho con .NET C#
+                </p>
+                
+                <ul>
+                    <li><a href="https://github.com/germanger/zpl-printer" target="_blank">Código en Github</a></li>
+                </ul>
+                
+                <div style="text-align: center">
+                    <a href="https://raw.githubusercontent.com/germanger/zpl-printer/master/screenshot2.jpg" target="_blank">
+                        <img style="max-width: 100%;" alt="" src="https://raw.githubusercontent.com/germanger/zpl-printer/master/screenshot2.jpg" />
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Productores excluídos en el SAG (2017)</h2>
+                <p>
+                  Interfaz simple que se conecta al SAG (Chile), trae el listado de productores excluídos y los presenta en una grilla simple.
+                </p>
+                
+                <ul>
+                    <li>Úsalo acá: <a href="https://sagcl.azurewebsites.net" target="_blank">https://sagcl.azurewebsites.net</a></li>
+                    <li>Código fuente: privado por ahora</li>
+                </ul>
+                
+                <hr/>
+                
+                <h2>Agrupar y agregar data (C#) (2016)</h2>
+                <p>
+                  Agrupar un listado de datos y desplegarlo en HTML.
+                </p>
+                
+                <ul>
+                    <li>Uso: incluir en el proyecto y usar.</li>
+                    <li><a href="https://github.com/germanger/csharp-pivot" target="_blank">Código en GitHub</a></li>
+                </ul>
+                
+                <div style="text-align: center">
+                    <a href="https://germanvicencio.files.wordpress.com/2016/10/pivotdata.png?w=462&h=272" target="_blank">
+                        <img style="max-width: 100%;" alt="" src="https://germanvicencio.files.wordpress.com/2016/10/pivotdata.png?w=462&h=272" />
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Tim de Vermeer: App para Android (2016)</h2>
+                <p>En la película “Tim’s Vermeer” (2013), Tim Jenison crea un dispositivo con espejos que le permite "calcar colores"</p>
+                <p>Esta aplicacin para Android intenta simular ese efecto.</p>
+                <p>Cuando el borde entre la cámara y la foto "desaparece" entonces el color se ha igualado.</p>
+                
+                <ul>
+                    <li>Instalar en Playstore (pronto)</li>
+                    <li><a href="https://github.com/germanger/timsvermeer" target="_blank">Código en Github</a></li>
+                </ul>
+                
+                <div id="vermeer-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="https://raw.githubusercontent.com/germanger/timsvermeer/master/playstore/img/opacity.jpg" target="_blank">
+                                <img alt="" src="https://raw.githubusercontent.com/germanger/timsvermeer/master/playstore/img/opacity.jpg" style="margin: auto;" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://raw.githubusercontent.com/germanger/timsvermeer/master/playstore/img/crop.jpg" target="_blank">
+                                <img alt="" src="https://raw.githubusercontent.com/germanger/timsvermeer/master/playstore/img/crop.jpg" style="margin: auto;" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#vermeer-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#vermeer-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <hr/>
+            
+                <h2>Software para exportadoras de frutas (2016)</h2>
+            
+                <p>Aplicación web para exportadoras de frutas, plantas de packing y frigoríficos.</p>
+                <p>Incluye: Recepciones, procesos de packing, repaletizajes, SAG, despachos, facturas, liquidaciones, etc.</p>
+                <p>
+                    Revisa el listado completo de features, screenshots y videos acá:<br/>
+                    <a href="http://fresh.edge.cl" target="_blank">http://fresh.edge.cl/</a>
+                </p>
+                
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/Eu6IvMX87CE" frameborder="0" allowfullscreen></iframe>
+                
+                <hr/>
+            
+                <h2>Twitter soft unfollow (Extension para Chrome) (2015)</h2>
+            
+                <p>Supongamos que quieres dejar de ver los tweets de alguien pero no quieres dejar de seguirlo (porque podra ofenderse). Esta extensión permite dejar de seguir de una forma "suave", sin realmente hacerlo.</p>
+
+                <ul>
+                    <li><a href="https://chrome.google.com/webstore/detail/twitter-soft-unfollow/fneefkpfajhkoimlabgcbhpbpjppceke" target="_blank">Instalar desde Google Chromestore</a></li>
+                    <li><a href="https://github.com/germanger/twitter-soft-unfollow" target="_blank">Código en Github</a></li>
+                </ul>
+                
+                <p><strong>Actualización</strong>: al parecer esto es equivalente a la opción "silenciar". El código es entretenido de todas formas...</p>
+                
+                <div style="text-align: center">
+                    <a href="https://raw.githubusercontent.com/germanger/twitter-soft-unfollow/master/chromestore/promotional-440x280.jpg" target="_blank">
+                        <img style="max-width: 100%" alt="" src="https://raw.githubusercontent.com/germanger/twitter-soft-unfollow/master/chromestore/promotional-440x280.jpg" />
+                    </a>
+                </div>
+                    
+                <hr/>
+                
+                <h2>YouTube Anotaciones XML a SRT (2015)</h2>
+            
+                <p>Herramienta simple que permite convertir anotaciones de YouTube (XML) al formato SRT.</p>
+
+                <ul>
+                    <li>Úsalo acá: <a href="https://rawgit.com/germanger/youtubeannotations-to-srt-js/master/index.html" target="_blank">https://rawgit.com/germanger/youtubeannotations-to-srt-js/master/index.html</a></li>
+                    <li><a href="https://github.com/germanger/youtubeannotations-to-srt-js" target="_blank">Código en Github</a></li>
+                </ul>
+                
+                <p>Escrito en JavaScript (FileReader, Angular y jQuery)</p>
+                
+                <hr/>
+                
+                <h2>Reproductor de YouTube sincronizado (2015)</h2>
+            
+                <p>Mira un video de YouTube con amigos al mismo tiempo.</p>
+
+                <ul>
+                    <li>Úsalo acá: <a href="https://synced-youtube.herokuapp.com/" target="_blank">https://synced-youtube.herokuapp.com/</a></li>
+                    <li><a href="https://github.com/germanger/synced-youtube" target="_blank">Código en Github</a></li>
+                </ul>
+                
+                <p>Escrito en Node JS, express, socket.io y Angular</p>
+                
+                <div style="text-align: center">
+                    <a href="https://raw.githubusercontent.com/germanger/synced-youtube/master/screenshot.png" target="_blank">
+                        <img style="max-width: 100%;" alt="" src="https://raw.githubusercontent.com/germanger/synced-youtube/master/screenshot.png" />
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Dibujo colaborativo online (2015)</h2>
+            
+                <p>Dibuja al mismo tiempo con tus amigos, en una pizarra online.</p>
+
+                <ul>
+                    <li>Úsalo acá: <a href="https://iosocket-canvas.herokuapp.com/" target="_blank">https://iosocket-canvas.herokuapp.com/</a></li>
+                    <li><a href="https://github.com/germanger/iosocket-canvas" target="_blank">Código en Github</a></li>
+                </ul>
+                
+                <p>Escrito en Node JS, express, socket.io y Angular</p>
+                
+                <div style="text-align: center">
+                    <a href="https://raw.githubusercontent.com/germanger/iosocket-canvas/master/screenshot.png" target="_blank">
+                        <img style="max-width: 100%;" alt="" src="https://raw.githubusercontent.com/germanger/iosocket-canvas/master/screenshot.png" />
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Software para exportadoras de nueces (2015)</h2>
+            
+                <p>Aplicacin web para exportadoras de nueces y plantas de packing, actualmente usado por una de las exportadoras más grandes de nueces en Chile, <a href="http://www.growerx.cl" target="_blank">Growex</a>.</p>
+                <p>Incluye: Recepciones, procesos de packing, repaletizajes, despachos, facturas, liquidaciones, etc.</p>
+                <p>
+                    Revisa el listado completo, screenshots y videos acá:<br/>
+                    <a href="http://ceviz.edge.cl" target="_blank">http://ceviz.edge.cl/</a>
+                </p>
+                
+                <hr/>
+                
+                <h2>Chile: Convertir DTE (XML) a PDF (2015)</h2>
+            
+                <p>En Chile ahora es obligación usar facturas electrónicas, usando XML con el esquema definido por el SII.cl. Sin embargo, aún es necesario poder ver las facturas en un formato leíble: PDF.</p>
+                <p>
+                    Esto es un simple conversor de DTE (XML) a PDF:<br/>
+                    <a href="https://dte.azurewebsites.net" target="_blank">https://dte.azurewebsites.net</a>
+                </p>
+                
+                <div style="text-align: center">
+                    <a href="https://dte.azurewebsites.net/Content/converter.jpg" target="_blank">
+                        <img style="max-width: 100%;" alt="" src="https://dte.azurewebsites.net/Content/converter.jpg" />
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>IMDB Friends (Extension de Chrome) (2015)</h2>
+            
+                <p>Extensión de Chrome para imdb.com que simplemente agrega un link al listado de amigos. (Por qué? porque el link real cuesta mucho encontrarlo)</p>
+
+                <ul>
+                    <li><a href="https://chrome.google.com/webstore/detail/imdb-friends-link/ihnbokeofndighklfankoldjdldpffhl?hl=en" target="_blank">Instalar desde Google Chromestore</a></li>
+                    <li><a href="https://github.com/germanger/imdb-friends-link" target="_blank">Código en Github</a></li>
+                </ul>
+                
+                <p><strong>Actualización (Febrero 20, 2017):</strong> IMDB quitó el feature de amigos (junto con los foros), asi que esta extensión ya no tiene sentido. Sugiero usar los bookmarks de Chrome para acceder a los ratings de tus amigos.</p>
+                
+                <div style="text-align: center">
+                    <a href="https://germanvicencio.files.wordpress.com/2015/05/promotional-440x280.jpg" target="_blank">
+                        <img style="max-width: 100%;" alt="" src="https://germanvicencio.files.wordpress.com/2015/05/promotional-440x280.jpg" />
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Plinto (2014)</h2>
+                
+                <p>Plinto te permite encontrar todas las galerías y exposiciones en tu ciudad.</p>
+                
+                <ul>
+                    <li>Desde el browser, visita <a href="http://www.plinto.cl" target="_blank">Plinto.cl</a></li>
+                    <li>Si usas Android, instala <a href="https://play.google.com/store/apps/details?id=cl.plinto.android" target="_blank">Plinto para Android.</a></li>
+                    <li>Si usas un iPhone o iPad, instala <a href="https://itunes.apple.com/us/app/plinto/id1006256663" target="_blank">Plinto para iOS.</a></li>
+                </ul>
+                
+                <p><strong>Actualización (Diciembre, 2015):</strong> Decidimos no seguir con Plinto por falta de financiamiento.</p>
+                
+                <div id="plinto-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2014/11/screen322x572.jpeg?w=322" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2014/11/screen322x572-1.jpeg?w=322" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2014/11/screen322x572-2.jpeg?w=322" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2014/11/screen322x572-3.jpeg?w=322" style="margin: auto;" />
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#plinto-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#plinto-carousel" role="button" data-slide="next">
+                        <span style="color: black" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Shitday para Android (2014)</h2>
+                
+                <p>Haz un seguimiento de cuán mala es tu vida contestando todos los días: “Fue un mal día?”, con: “Día de mierda” o “No un día de mierda”.</p>
+                
+                <ul>
+                    <li>Disponible gratis en <a href="https://play.google.com/store/apps/details?id=cl.manger.android.shitday" target="_blank">Google Playstore.</a></li>
+                    <li><a href="https://github.com/germanger/shitday" target="_blank">Código en GitHub</a></li>
+                </ul>
+                
+                <div style="text-align: center">
+                    <img style="max-width: 100%" alt="" src="https://germanvicencio.files.wordpress.com/2015/05/ic_launcher1.png" />
+                </div>
+
+                <hr/>
+                
+                <h2>Juego de la vida (Java AWT) (2011)</h2>
+                
+                <p>Una simple demostración en Java del <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Juego de la vida de John Horton Conway</a> que escribí el año 2011. Es una simulación de celulas naciendo y muriendo de acuerdo a algunas reglas.</p>
+                
+                <ul>
+                    <li>Uso: compilar y ejecutar</li>
+                    <li><a href="https://github.com/germanger/game-of-life-awt" target="_blank">Código en GitHub</a></li>
+                </ul>
+                
+                <div style="text-align: center">
+                    <a href="https://github.com/germanger/game-of-life-awt/raw/master/screenshots/board-frame.png?raw=true" target="_blank">
+                        <img style="max-width: 100%" alt="" src="https://github.com/germanger/game-of-life-awt/raw/master/screenshots/board-frame.png?raw=true" />
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Implementación del algoritmo Bug-2 (2010)</h2>
+                
+                <p>Bug-2 resuelve el problema de alcanzar un objetivo sin conocer el mapa completo: solo se conocen las celdas adyacentes.</p>
+                       
+                <p>
+                    <strong>Algoritmo:</strong><br/>
+                    Ir en línea recta en dirección al objetivo. Si no se puede seguir por culpa de un obstaculo se debe rodear hasta la intersección con la línea recta, y luego seguir por ésta en dirección al objetivo. Es un algoritmo completo porque siempre termina.
+                </p>
+                
+                <ul>
+                    <li><a href="http://qm.cl/germanvicencio/Opensource/bug2.zip" target="_blank">Código disponible acá</a> (POR-HACER: limpiar y moverlo a GitHub)</li>
+                </ul>
+                
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/-iOu0bawbcA" frameborder="0" allowfullscreen></iframe>
+                
+                <hr/>
+                
+                <h2>Cuatro proyectos J2me en cuatro semanas (2010)</h2>
+                
+                <p>En el 2010, en conjunto con Matías Bennett, desarrollamos cuatro proyectos J2ME en cuatro semanas.</p>
+
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=mxtdZ4eeZ0E" target="_blank">J2ME Pacman (Video)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=HgB5FhwYyMc" target="_blank">J2ME Paint (Video)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Q-dXgbLHXpY" target="_blank">J2ME Bluetooth Chat (Video)</a></li>
+                    <li>J2ME Simulador GPS (Video)</li>
+                </ul>
+                
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/mxtdZ4eeZ0E" frameborder="0" allowfullscreen></iframe>
+                
+                <hr/>
+                
+                <h2>Cliente de Email (2009)</h2>
+                
+                <p>
+                    Un cliente de email (como Outlook) que soporta POP3, IMAP, SMTP.<br/>
+                    Incluye administración de contactos, etiquetas, busqueda, lista negra, múltiples cuentas, etc.
+                </p>
+                
+                <p>Escrito en C#</p>
+                
+                <div id="email-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2015/05/borrar1.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2015/05/borrar2.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2015/05/borrar3.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2015/05/borrar4.jpg" style="margin: auto;" />
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#email-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#email-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Embarques y recibidores (2005)</h2>
+                
+                <p>Aplicación web que escribí en el 2005 para una exportadora de frutas chilena (Bendavid, luego Scramble) que permite a los recibidores hacer login y consultar sus embarques.</p>
+                
+                <p>Escrito en ASP 3.0, con consultas SQL a una base de datos DBF</p>
+                
+                <div id="bdavid-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2015/05/borrar_003.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2015/05/borrar_006.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2015/05/borrar_004.jpg" style="margin: auto;" />
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#bdavid-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#bdavid-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+                <hr/>
+                
+                <h2>Lan-Z clan hosting (2004)</h2>
+                
+                <p>
+                    Aplicación web con la que los clanes pueden compartir noticias, partidos, etc.<br/>
+                    Fue comprado por Lan-Z (hoy Zmart), y ofrecido para los clanes que contrataban servidores.
+                </p>
+                
+                <p>Escrito en ASP 3.0</p>
+                
+                <div id="lanz-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2004/06/001.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2004/06/002.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2004/06/003.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2004/06/004.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2004/06/005.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2004/06/006.jpg" style="margin: auto;" />
+                        </div>
+                        <div class="item">
+                            <img alt="" src="https://germanvicencio.files.wordpress.com/2004/06/007.jpg" style="margin: auto;" />
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#lanz-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#lanz-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+                <p><a href="#top">Volver arriba</a></p>
+                
+                <hr/>
+                
+                <div style="height: 300px;"></div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
